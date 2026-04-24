@@ -13,6 +13,7 @@ public class CommentDto {
         this.content = content;
     }
 
+    // Getter & Setter
     public Long getCommentId() { return commentId; }
     public void setCommentId(Long commentId) { this.commentId = commentId; }
     public Long getArticleId() { return articleId; }
@@ -24,7 +25,6 @@ public class CommentDto {
 
     @Override
     public String toString() {
-        // 앞선 요구사항 이미지에 맞춰 탭(\t) 형식을 적용하는 것이 좋습니다.
-        return "\t📝 " + commentId + "\t" + name + "\t" + content;
+        return "\t🔖 " + commentId + "\t" + name + "\t" + content;
     }
 }

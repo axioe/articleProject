@@ -15,5 +15,5 @@ public interface CrudInterface {
     void insertComment(Comment comment);
     void updateComment(Comment comment);
     void deleteComment(Long deleteCommentId);
-    
+
 }

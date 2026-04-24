@@ -1,25 +1,26 @@
 package repository;
 
 import crudInterface.CrudInterface;
+import dto.ArticleDto;
+import dto.CommentDto;
 
 import javax.xml.stream.events.Comment;
 import java.util.List;
 
 public class ArticleRepository implements CrudInterface {
 
-
     @Override
-    public List<Article> all() {
+    public List<ArticleDto> all() {
         return List.of();
     }
 
     @Override
-    public void newArticle(Article article) {
+    public void newArticle(ArticleDto articleDto) {
 
     }
 
     @Override
-    public Article detail(Long id) {
+    public ArticleDto detail(Long id) {
         return null;
     }
 
@@ -29,17 +30,17 @@ public class ArticleRepository implements CrudInterface {
     }
 
     @Override
-    public void update(Article article) {
+    public void update(ArticleDto articleDto) {
 
     }
 
     @Override
-    public void insertComment(Comment comment) {
+    public void insertComment(CommentDto commentDto) {
 
     }
 
     @Override
-    public void updateComment(Comment comment) {
+    public void updateComment(CommentDto commentDto) {
 
     }
 
